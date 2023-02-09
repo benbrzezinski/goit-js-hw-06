@@ -22,25 +22,3 @@ button {
   padding: 8px 12px;
   cursor: pointer;
 }
-
-.gallery {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 30px;
-  list-style-type: none;
-  padding: 0;
-  margin: 25px 0 0 0;
-}
-
-.img {
-  display: block;
-  width: 100%;
-  aspect-ratio: 3/2;
-  object-fit: cover;
-}
-
-@media screen and (max-width: 1199px) {
-  .gallery {
-    grid-template-columns: 1fr;
-  }
-}

@@ -10,8 +10,7 @@ const handleSubmit = (e) => {
     alert("Fill in all fields!");
   }
 
-  const inputValues = { Email: email.value, Password: password.value };
-  console.log(inputValues);
+  console.log({ Email: email.value, Password: password.value });
   e.currentTarget.reset();
 };
 

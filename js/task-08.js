@@ -6,11 +6,13 @@ const handleSubmit = (e) => {
     elements: { email, password },
   } = e.currentTarget;
 
+  console.log({ Email: email.value, Password: password.value });
+
   if (email.value === "" || password.value === "") {
     alert("Fill in all fields!");
+    return;
   }
 
-  console.log({ Email: email.value, Password: password.value });
   e.currentTarget.reset();
 };
 

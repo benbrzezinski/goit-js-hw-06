@@ -1,5 +1,5 @@
 const body = document.querySelector("body");
-const colorInHex = document.querySelector(".color");
+const colorValueInHex = document.querySelector(".color");
 const changeColorBtn = document.querySelector(".change-color");
 
 function getRandomHexColor() {
@@ -8,7 +8,7 @@ function getRandomHexColor() {
 
 const changeColorOnClick = () => {
   body.style.backgroundColor = getRandomHexColor();
-  colorInHex.innerText = getRandomHexColor();
+  colorValueInHex.innerText = getRandomHexColor();
 };
 
 changeColorBtn.addEventListener("click", changeColorOnClick);

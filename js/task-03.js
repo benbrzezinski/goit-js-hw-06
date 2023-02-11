@@ -19,4 +19,4 @@ const markups = images
   .map(({ url, alt }) => `<li><img class="img" src="${url}" alt="${alt}"></li>`)
   .join("");
 
-list.insertAdjacentHTML("afterbegin", markup);
+list.insertAdjacentHTML("afterbegin", markups);

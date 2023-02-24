@@ -9,16 +9,17 @@ function getRandomHexColor() {
 
 const createBoxes = (amount) => {
   for (let i = 0; i < amount; i++) {
-    const element = document.createElement("div");
-    element.style.width = `${30 + 10 * i}px`;
-    element.style.height = `${30 + 10 * i}px`;
-    element.style.backgroundColor = getRandomHexColor();
-    boxesSpace.append(element);
+    const box = document.createElement("div");
+    box.style.width = `${30 + 10 * i}px`;
+    box.style.height = `${30 + 10 * i}px`;
+    box.style.backgroundColor = getRandomHexColor();
+    boxesSpace.append(box);
   }
 };
 
 const destroyBoxes = () => {
   boxesSpace.innerHTML = "";
+  numberInput.value = "";
 };
 
 createBtn.addEventListener("click", () =>
